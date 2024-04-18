@@ -15,6 +15,7 @@ Um programa apresentando os conceitos básicos de java e orientação a objetos.
 Através do projeto foi possível aprender o básico de java e uma introdução a programação orientada a objeto, reforçando conceitos de atributos, classe, encapsulamento, herança, polimorfismo e interface.
 
 ## 🛠 Features
+- [x] Básico em Java
 - [x] Construção de classes e atributos
 - [x] Uso de herança
 - [x] Conceituação de polimorfismo

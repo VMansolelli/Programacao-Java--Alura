@@ -19,6 +19,7 @@ Através do projeto foi possível aprender o básico de java e uma introdução 
 - [x] Construção de classes e atributos
 - [x] Uso de herança
 - [x] Conceituação de polimorfismo
+- [x] Uso de interface
 
 ![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 

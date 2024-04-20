@@ -10,6 +10,12 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    //Criação de construtor que deixa obrigatório que ao instanciar uma classe coloque nome e ano de lançamento
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     /*Getter e Setter são métodos que permite retornar e alterar o valor do atributo no projeto
     Chamamos todo esse processo de bloqueios e liberações de encapsulamento*/
 

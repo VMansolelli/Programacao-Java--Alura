@@ -10,6 +10,12 @@ public class Serie extends Titulo implements Classificavel {
     private int episodiosPorTemporada;
     private int minutosPorEpisodios;
 
+    //Criação de construtor que puxa a herança da classe mãe que é a Titulo,
+    // dessa forma fica obrigatório que ao instanciar um objeto Serie ele deve ter um nome e ano de lançamento
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public int getTemporadas() {
         return temporadas;
     }

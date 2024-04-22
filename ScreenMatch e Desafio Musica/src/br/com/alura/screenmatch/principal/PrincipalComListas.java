@@ -6,6 +6,9 @@ import br.com.alura.screenmatch.modelos.Titulo;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -17,6 +20,8 @@ public class PrincipalComListas {
         filmeDoPaulo.avalia(10);
         Serie lost = new Serie("Lost",2000);
 
+
+
         ArrayList<Titulo> listaAssistidos = new ArrayList<>();
         listaAssistidos.add(filmeDoPaulo);
         listaAssistidos.add(meuFilme);
@@ -25,9 +30,28 @@ public class PrincipalComListas {
 
         for (Titulo item : listaAssistidos) {
             System.out.println(item.getNome());
-            //Realiza um cast para forçar o item a encontrar a classificao que esta na classe filme
-            Filme filme = (Filme) item;
-            System.out.println("Clasificação " + filme.getClassificao());
+            //Realiza um filtro para mostrar apenas as classificações de filme
+            if (item instanceof Filme filme) {
+                System.out.println("Clasificação " + filme.getClassificao());
+            }
         }
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Victor");
+        buscaPorArtista.add("Adam");
+        buscaPorArtista.add("Paulo");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(listaAssistidos);
+        System.out.println(listaAssistidos);
+
+        //Realizando ordenação por outro metodo
+        listaAssistidos.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println(listaAssistidos);
+
     }
 }

@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
     //Atributos que toda classe para se criar um objeto pode ter
     //private bloqueia o uso do atributo para declaração direta pelo código, seu uso fica exclusivo aos métodos
     private String nome;
@@ -68,5 +68,11 @@ public class Titulo {
     //Criação de método que retorna um resultado
     public double pegaMedia(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
+
+    //Compara titulos para realizar a ordenação de lista de objetos
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }

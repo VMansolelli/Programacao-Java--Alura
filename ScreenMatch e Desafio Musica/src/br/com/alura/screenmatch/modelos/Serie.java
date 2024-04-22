@@ -58,4 +58,9 @@ public class Serie extends Titulo implements Classificavel {
     public int getClassificao() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Serie: " + this.getNome() + " (" + this.getAnoDeLancamento() + ")";
+    }
 }

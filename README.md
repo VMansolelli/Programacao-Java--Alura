@@ -6,7 +6,7 @@
 </div>
 
 ## 🚀  Primeiro programa, ScreenMatch e Desafio audios
-projeto desenvolvido através do curso **Java: criando a sua primeira aplicação** e **Java: aplicando a Orientação a Objetos** com o acompnahmento dos professores Jacqueline Oliveira e Paulo Silveira da escola **ALURA**.
+projeto desenvolvido através do curso **Java: criando a sua primeira aplicação**, **Java: aplicando a Orientação a Objetos** e **Java: consumindo API, gravando arquivos e lidando com erros** com o acompnahmento dos professores Jacqueline Oliveira e Paulo Silveira da escola **ALURA**.
 
 ## ⚙️ Descrição do projeto
 Um programa apresentando os conceitos básicos de java e orientação a objetos.
@@ -20,6 +20,7 @@ Através do projeto foi possível aprender o básico de java e uma introdução 
 - [x] Uso de herança
 - [x] Conceituação de polimorfismo
 - [x] Uso de interface
+- [x] Uso do comando Scanner
 - [x] Construção de uso de ArrayList
 - [x] Hierarquia de classes de métodos
 - [x] Criação e uso adequado de métodos construtores
@@ -27,6 +28,11 @@ Através do projeto foi possível aprender o básico de java e uma introdução 
 - [x] Boa prática de reconstrução do método toString
 - [x] Uso adequado do foreach - iterable
 - [x] Uso de Comparable e CompareTo para ordenar listas
+- [x] Consumo de API
+- [x] Uso de try e catch para tratamento de exception
+- [x] Criação de exception propria
+- [x] Uso do comando FileWriter
+
 
 
 
